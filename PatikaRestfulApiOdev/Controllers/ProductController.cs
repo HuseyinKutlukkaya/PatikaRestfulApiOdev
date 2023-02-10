@@ -18,7 +18,7 @@ namespace PatikaRestfulApiOdev.Controllers
         [HttpGet("list")]
         public ActionResult<List<Product>> Get()
         {
-            return _products;
+            return Ok(_products);
         }
 
 
