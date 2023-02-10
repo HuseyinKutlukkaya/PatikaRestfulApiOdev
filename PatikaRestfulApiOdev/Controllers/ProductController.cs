@@ -15,6 +15,11 @@ namespace PatikaRestfulApiOdev.Controllers
         new Product { Id = 3, Name = "Product 3", Price = 10, Description = "product 3" }
     };
 
+        [HttpGet("list")]
+        public ActionResult<List<Product>> Get()
+        {
+            return _products;
+        }
 
 
         [HttpGet("{id}")]
